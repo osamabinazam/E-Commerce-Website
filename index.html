@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osso A.</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Google fonts Integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+
+
+
+</head>
+<body>
+    
+    <!-- Overlay  -->
+    <div class="overlay" data-overlay></div>
+
+    <!-- Modal -->
+    <div class="modal" data-modal>
+        <div class="modal-close-overlay" data-modal-overlay></div>
+        <div class="modal-content">
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <!-- News Letter Images -->
+            <div class="newsletter-img">
+                <img src="./assets/images/newsletter.png" alt="Subscribe Newsletter" height="400" width="400">
+            </div>
+
+            <!-- Content of news letter -->
+            <div class="newsletter">
+
+                <!-- form -->
+                <form action="#">
+
+                    <!-- Information text related  to form -->
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Subscribe Newsletter</h3>
+                        <p class="newsletter-desc">
+                            Subscribe to <b>Ossa A.</b> to get  latest product and discount update.
+                        </p>
+                    </div>
+
+                    <!-- Form fields -->
+                    <input type="email" name="email" class="email-field" placeholder="Enter Email Address" required>
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Notification Toast -->
+    <div class="notification-toast closed" data-toast>
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <!-- Banner of the toast -->
+        <div class="toast-banner">
+            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70" >
+        </div>
+
+        <!-- Toast Detail -->
+        <div class="toast-detail">
+            <p class="toast-message">
+                Someone just bought
+            </p>
+            <p class="toast-title">
+                Rose Gold Earrings
+            </p>
+
+            <p class="toast-meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Header of the website -->
+
+
+    <!-- Linking custom javascript file -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Integrating ION ICONS -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm."></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.2.2/dist/ionicons/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+
+</body>
+</html>
