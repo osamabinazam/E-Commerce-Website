@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0,0%,70%); }
 /* Main */
 
 /* Overlay */
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -105,15 +105,31 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0,0%,70%); }
     opacity: 0;
     pointer-events: none;
     z-index: 15;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .overlay.active{
     opacity: 1;
     pointer-events: all;
-    
 }
 
+
+/* Resused Peroperties */
+.container {padding: 0 15px;}
+
+.has-scrollbar{padding: 0 15px;}
+.has-scrollbar::-webkit-scrollbar{
+    width: 12px; 
+    height: 12px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb{
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+.has-scrollbar:hover::-webkit-scrollbar-thumb{background: hsl(0 , 0%, 90%);}
+.has-scrollbar::-webkit-scrollbar-thumb:hover{background: hsl(0, 0%, 80%);}
 
 /* Modal Styling */
 .modal{
@@ -230,8 +246,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0,0%,70%); }
     padding: 10px 15px;
     border-radius: var(--border-radius-sm);
     margin: auto;
-    /* transition: var(--transition-timing); */
-    transition: 0.2s ease;
+    transition: var(--transition-timing);
 }
 .btn-newsletter:hover{
     background: var(--salmon-pink);
@@ -323,3 +338,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0,0%,70%); }
 
 
 }
+
+
+
+/* Header Data */
+
